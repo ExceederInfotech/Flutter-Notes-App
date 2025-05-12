@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:notes_check/Login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Firebase Notes',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const NotesPage(),
+      home: const PhoneAuthScreen(),
     );
   }
 }
